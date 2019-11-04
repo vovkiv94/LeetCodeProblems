@@ -40,4 +40,18 @@ class Solution {
         }
     }
 
+    public int strStr3(String haystack, String needle) {
+        if(needle.isEmpty()) return 0;
+        if(needle.length() > haystack.length()) return -1;
+
+        for(int slow = 0; slow <= haystack.length() - needle.length(); slow++) {
+            int fast = slow;
+            for(int i = 0; i<needle.length(); i++, fast++) {
+                if(haystack.charAt(fast) != needle.charAt(i)) break;
+                if(i == needle.length()-1) return slow;
+            }
+        }
+        return -1;
+    }
+
 }

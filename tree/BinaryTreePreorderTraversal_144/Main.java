@@ -1,8 +1,8 @@
-package BinaryTreeInorderTraversal_94;
+package BinaryTreePreorderTraversal_144;
 
-import TreeNode.TreeNode;
+        import TreeNode.TreeNode;
 
-import java.util.List;
+        import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,9 +10,9 @@ public class Main {
 
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);
-        root.right.right = new TreeNode(3);
+        root.right.left = new TreeNode(3);
 
-        List<Integer> res = s.inorderTraversal(root);
+        List<Integer> res = s.preorderTraversal(root);
         System.out.println(res);
     }
 }

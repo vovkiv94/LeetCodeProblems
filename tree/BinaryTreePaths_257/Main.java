@@ -1,4 +1,4 @@
-package BinaryTreeInorderTraversal_94;
+package BinaryTreePaths_257;
 
 import TreeNode.TreeNode;
 
@@ -12,7 +12,7 @@ public class Main {
         root.right = new TreeNode(2);
         root.right.right = new TreeNode(3);
 
-        List<Integer> res = s.inorderTraversal(root);
+        List<String> res = s.binaryTreePaths(root);
         System.out.println(res);
     }
 }

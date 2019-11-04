@@ -13,6 +13,31 @@ import ListNode.ListNode;
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
+        if(head == null) return true;
+
+        ListNode slow = head, fast = head;
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        ListNode previous = slow;
+        ListNode current = slow.next;
+        while(current != null) {
+            ListNode temp = current.next;
+            current.next = previous;
+            previous = current;
+            current = temp;
+        }
+        while(head != slow) {
+            if(head.val != previous.val) return false;
+            head = head.next;
+            previous = previous.next;
+        }
+        return true;
+    }
+
+    public boolean isPalindrome2(ListNode head) {
         ListNode start = head;
         int count = 0;
         while(start != null) {

@@ -1,5 +1,7 @@
 package ConstructBinaryTreeFromPreorderAndInorderTraversal_105;
 
+import TreeNode.TreeNode;
+
 /**
  * Given preorder and inorder traversal of a tree, construct the binary tree.
  * <p>

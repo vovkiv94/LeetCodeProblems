@@ -1,5 +1,7 @@
 package ConstructBinaryTreeFromInorderAndPostorderTraversal_106;
 
+import TreeNode.TreeNode;
+
 public class Main {
     public static void main(String[] args) {
         Solution s = new Solution();

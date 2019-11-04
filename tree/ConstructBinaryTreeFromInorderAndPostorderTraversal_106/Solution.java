@@ -1,5 +1,7 @@
 package ConstructBinaryTreeFromInorderAndPostorderTraversal_106;
 
+import TreeNode.TreeNode;
+
 /**
  * Given inorder and postorder traversal of a tree, construct the binary tree.
  * <p>
